@@ -1,0 +1,32 @@
+[project]
+name = "tasteai"
+version = "0.1.0"
+description = "AI-powered recipe recommender based on uploaded food images"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-core>=0.3.0",
+    "streamlit>=1.40.0",
+    "pillow>=11.0.0",
+    "python-dotenv>=1.0.0",
+    "tavily-python>=0.5.0",
+    "langchain-tavily>=0.1.0",
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "python-multipart>=0.0.6",
+    "oss2>=2.19.0",
+    "langgraph-checkpoint-sqlite>=3.0.3",
+    "pydantic>=2.13.4",
+    "langgraph-checkpoint-mongodb>=0.4.0",
+    "langgraph>=1.2.4",
+]
+
+[tool.uv]
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+dev-dependencies = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+]
